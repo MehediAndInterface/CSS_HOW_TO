@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form action="#">
+           <label for="name">Name:</label>
+           <input type="text" name="name" id="name" placeholder="Your full name" required>
+           
+           <label for="email">Email</label>
+           <input type="email" name="email" id="email" placeholder="Your email" required>
+
+           <label for="age">Age:</label>
+           <input type="number" name="age" id="age" placeholder="Your age" required>
+
+           <label for="gender">Gender:</label>
+           <div class="gender-options">
+            <label for="">
+                <input type="radio" name="gender" id="" value="male"> Male
+            </label>
+            <label for="">
+                <input type="radio" name="gender" id="" value="female"> Female
+            </label>
+            <label for="">
+                <input type="radio" name="gender" id="" value="other"> Other
+            </label>
+           </div>
+
+           <label for="hobbies">Hobbies:</label>
+           <div class="hobbies-options">
+            <label for="">
+                <input type="checkbox" name="hobbies" id="" value="sports"> Sports
+            </label>
+            <label for="">
+                <input type="checkbox" name="hobbies" id="" value="reading"> Reading
+            </label>
+            <label for="">
+                <input type="checkbox" name="hobbies" id="" value="traveling"> Traveling
+            </label>
+           </div>
+
+           <label for="country">Country:</label>
+           <select name="country" id="country">
+            <option value="qatar">Qatar</option>
+            <option value="china">China</option>
+            <option value="usa">USA</option>
+           </select>
+
+           <label for="message">Message:</label>
+           <textarea name="message" id="message" rows="4" placeholder="Your message..."></textarea>
+
+           <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
